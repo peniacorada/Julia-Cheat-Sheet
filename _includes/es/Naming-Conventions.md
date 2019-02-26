@@ -1,4 +1,4 @@
-La convención principal en Julia es evitar guines bajos (`_`) a menos que sean necesarios por legibilidad.
+La convención principal en Julia es evitar guiones bajos (`_`) a menos que sean necesarios por legibilidad.
 
 Los nombres de variable son en minúsculas (o snake case, separadas por guines bajos): `somevariable`.
 

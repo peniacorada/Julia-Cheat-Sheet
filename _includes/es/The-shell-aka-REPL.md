@@ -1,6 +1,6 @@
 |                                        |                                   |
 | -------------------------------------- | --------------------------------- |
-| Llamar último resultado                | `ans`                             |
+| Recuperar último resultado             | `ans`                             |
 | Interrumpir la ejecución               | \[Ctrl\] + \[C\]                  |
 | Borrar la pantalla                     | \[Ctrl\] + \[L\]                  |
 | Ejecutar el programa                   | `include("filename.jl")`          |

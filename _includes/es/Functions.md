@@ -1,4 +1,4 @@
-Todos los argumentos se pasan a la función por referencia.
+Todos los argumentos se pasan a las funciones por referencia.
 
 Las funciones con un `!` añadido cambian por lo menos uno de los argumentos,
 habitualmente el primero: `sort!(arr)`.
@@ -20,7 +20,7 @@ El punto y coma *no* es necesario en una llamada a una función que acepta argum
 
 La sentencia `return` es opcional pero altamente recomendable.
 
-Se pueden devolver estructuras de datos múltiples como un tuple e una única sentencia `return`.
+Se pueden devolver estructuras de datos múltiples como una tupla en una única sentencia `return`.
 
 Los argumentos de la línea de comandos `julia script.jl arg1 arg2...` pueden ser procesados con
 la constante global `ARGS`:
@@ -47,20 +47,20 @@ func(1, 2, [3:5]) # tuple: (1, 2, UnitRange{Int64}[3:5])
 Las funciones pueden ser anidadas:
 
 ```
-function outerfunction()
-    # bloque de código de función outerfunction
-    function innerfunction()
-        # bloque de código de función innerfunction
-        # puede acceder definiciones anteriores de outerfunction
+function funcionexterna()
+    # bloque de código de función funcionexterna
+    function funcioninterna()
+        # bloque de código de función funcioninterna
+        # puede acceder definiciones anteriores de funcionexterna
     end
-    # bloque de código adicional de función outerfunction
+    # bloque de código adicional de función funcionexterna
 end
 ```
 
 Las funciones pueden devolver tipos explícitos
 
 ```
-# take any Number subtype and return it as a String
+# se toma cualquier subtipo Number y se devuelve como una String
 function stringifynumber(num::T)::String where T <: Number
     return "$num"
 end
@@ -88,7 +88,7 @@ julia> mean(B, dims=1)
 Julia crea <a class="tooltip" href="#">versiones especializadas<span> El despacho múltiple es un tipo
 polimorfismo que determina dinámicamente qué versión de una función debe ser llamada.
 En este contexto significa que es resuelto en tiempo de ejecución, mientras que la
-sobrecarga de métodos es resuelta en tiempo de compilado. Julia gestiona el despacho
+sobrecarga de métodos es resuelta en tiempo de compilación. Julia gestiona el despacho
 múltiple completamente en segundo plano. Por supuesto, se pueden proporcionar
 sobrecargas de función personalizadas con anotaciones de tipo. </span></a>
 de funciones basada en los tipos de los datos. Cuando una función es llamada con
@@ -98,7 +98,7 @@ máquina nativo y saltarse el proceso de compilado.
 Desde **Julia 0.5** la existencia de ambigüedades potenciales de tipo 
 es aún aceptable, pero llamar um método ambiguo supone un **error inmediato**.
 
-El desbordamiento de pila es posible en el caso de funciones recursivas se anidan
+El desbordamiento de pila es posible en el caso de funciones recursivas que se anidan
 a lo largo de varios niveles. El ["Trampolining"](https://web.archive.org/web/20140420011956/http://blog.zachallaun.com/post/jumping-julia) 
 se puede utilizar para hacer una optimización de recursión con llamadas de cola, ya que Julia no lo hace automáticamente
 [aún](https://github.com/JuliaLang/julia/issues/4964).

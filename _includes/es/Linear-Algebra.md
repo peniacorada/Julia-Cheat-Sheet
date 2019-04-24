@@ -7,10 +7,10 @@ Para la mayoría de las herramientas de álgebra lineal, use `using LinearAlgebr
 | Dimensiones de la matriz              | `size(M)`                                   |
 | Seleccionar la fila `i`               | `M[i, :]`                                   |
 | Seleccionar la columna `i`            | `M[:, i]`                                   |
-| Concatenar horizontalmente            | `M = [a b]` or `M = hcat(a, b)`             |
-| Concatenar verticalmente              | `M = [a ; b]` or `M = vcat(a, b)`           |
+| Concatenar horizontalmente            | `M = [a b]` o `M = hcat(a, b)`             |
+| Concatenar verticalmente              | `M = [a ; b]` o `M = vcat(a, b)`           |
 | Transposición de matriz               | `transpose(M)`                              |
-| Transposición y conjugada de matriz   | `M'` or `adjoint(M)`                        |
+| Transposición y conjugada de matriz   | `M'` o `adjoint(M)`                        |
 | Traza de matriz                       | `tr(M)`                                     |
 | Determinante de matriz                | `det(M)`                                    |
 | Rango de matriz                       | `rank(M)`                                   |

@@ -9,7 +9,7 @@ usados como identificadores, claves (en diccionarios), o columnas en data frames
 Los símbolos no pueden concatenarse.
 
 Las citas `:( ... )` o `quote ... end` crean una expresión, igual a 
-<a class="tooltip" href="#">`parse(str)` <span> Esta forma es probablemente
+<a class="tooltip" href="#">`parse(str)` <span> Esta forma probablemente es
 más familiar para personas con conocimiento de SQL dinámico. La función `parse` es
 similar a la sentencia SQL `EXECUTE IMMEDIATE` de Oracle y PostgreSQL o el procedimiento
 de servidor SQL `sp_executesql()`. </span></a> , y `Expr(:call, ...)`.

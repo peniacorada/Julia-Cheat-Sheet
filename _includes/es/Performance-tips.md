@@ -5,10 +5,10 @@
 - Libere memoria para matrices grandes con `arr = nothing`.
 - Accese las matrices por medio de columnas, ja que las matrices multidimensionales son guardadas por orden de columna.
 - Pre-asigne las estructuras de datos resultantes.
-- Desactive el recolector de basura e operaciones en tiempo real: `disable_gc()`.
+- Desactive el recolector de basura en operaciones en tiempo real: `disable_gc()`.
 - Evite el operador de propagación (`...`) para argumentos clave-valor.
 - Use APIs mutables (es decir, funciones con `!` para evitar la copia de estructuras de datos).
-- Utilice operaciones de matrices de elemento a elemento matriz en lugar de listas por comprensión.
+- Utilice operaciones de matrices (elemento a elemento) en lugar de listas por comprensión.
 - Evite `try`-`catch` en bucles de cálculo intensivo.
 - Evite `Any` en colecciones.
 - Evite tipos abstractos en colecciones.

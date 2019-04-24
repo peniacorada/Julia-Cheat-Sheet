@@ -1,4 +1,4 @@
-Para ayudar a carga Julia más rápido, muchas de las funciones principales están en
+Para ayudar a cargar Julia más rápido, muchas de las funciones principales están en
 las bibliotecas incluídas por defecto con Julia. Para disponibilizarlas, use `using
 PackageName`. A continuación algunas Bibliotecas Estándar y funciones populares.
 
